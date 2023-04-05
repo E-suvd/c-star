@@ -3,9 +3,15 @@
 void printStar( int n) {
 	if(n==1) printf("*\n");
 	else {
-		printStar(n-1);
-		for(int i=0; i<n; i++) printf("*");
+		
+		for(int i=0; i<n; i++) 
+		printf("*");
 		printf("\n");
+		printf(" ");
+		printf("\n");
+		printf("*");
+		printStar(n-1);
+		
 	}
 }
 

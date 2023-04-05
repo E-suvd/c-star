@@ -1,15 +1,17 @@
 #include <stdio.h>
-
-void printStar( int n) {
-	if(n==1) printf("*\n");
-	else {
-		for(int i=0; i<n; i++) printf("*");
-		printf("\n");
-		printStar(n-1);
-	}
+void printStar(int n) {
+		for(int i=0;i<n;i++){
+			printf("*");
+			printf("\n");
+			for(int i=0;i<n;i++){
+			printf("*");
+			printf("\n");
+			}
+		}
+		
+	
 }
-
-int main() {
-	printStar(5);
+int main(){
+	printStar(8);
 	return 0;
 }
